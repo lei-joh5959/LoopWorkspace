@@ -285,8 +285,6 @@ jobs:
           # Copy url from a GitHub commit or pull request and insert below, and remove the "#" sign from the beginning of the line to activate:
           curl https://github.com/lei-joh5959/loopkit/commit/6326d677e773086d2e7ded73884a4953e5b5ce5b.patch | git apply --directory=LoopKit -v --whitespace=fix
 
-# Loopkit: lei-joh5959 : Lyumjev endringer
-curl https://github.com/lei-joh5959/loopkit/commit/SHA-1.patch | git apply -v --Loopkit -v --whitespace=fix
           # Submodule xxxxx patches:
 
           # Add patches for customization of additional submodules by following the templates above, 
