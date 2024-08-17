@@ -283,8 +283,9 @@ jobs:
           # Submodule LoopKit patches:
           # General template for customizing submodule LoopKit 
           # Copy url from a GitHub commit or pull request and insert below, and remove the "#" sign from the beginning of the line to activate:
-          curl https://github.com/lei-joh5959/loopkit/commit/6e445f62560f65daa509c570089ff2ce995fd3e1.patch | git apply -v --Loopkit -v --whitespace=fix
-
+          # curl https://github.com/lei-joh5959/loopkit/commit/6e445f62560f65daa509c570089ff2ce995fd3e1.patch | git apply -v --Loopkit -v --whitespace=fix
+          curl https://github.com/lei-joh5959/loopkit/commit/6e445f62560f65daa509c570089ff2ce995fd3e1.patch | git apply --directory=LoopKit -v --whitespace=fix
+         
           # Submodule xxxxx patches:
 
           # Add patches for customization of additional submodules by following the templates above, 
